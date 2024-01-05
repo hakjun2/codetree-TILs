@@ -9,7 +9,7 @@ int main() {
     int n, m;
     cin >> n >> m;
     if(m==1) {
-        cout << n+1;
+        cout << 2*n;
         return 0;
     }
     for(int i = 0 ; i < n ; i++) {
