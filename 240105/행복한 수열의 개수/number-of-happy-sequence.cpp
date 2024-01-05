@@ -8,6 +8,10 @@ int grid[MAX_N][MAX_N];
 int main() {
     int n, m;
     cin >> n >> m;
+    if(m==1) {
+        cout << n+1;
+        return 0;
+    }
     for(int i = 0 ; i < n ; i++) {
         for( int j = 0 ; j < n ; j++) {
             cin >> grid[i][j];
