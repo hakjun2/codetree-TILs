@@ -21,7 +21,7 @@ int main() {
         for(int j = 0 ; j < m ; j++) {
             cnt = grid[i][j] + grid[i+1][j] + grid[i+1][j+1];
             maxc = max(cnt, maxc);
-            cnt = grid[i][j+1] + grid[i+1][j+1];
+            cnt = grid[i][j+1] + grid[i+1][j+1] + grid[i+1][j];
             maxc = max(cnt, maxc);
             cnt = grid[i][j] + grid[i][j+1] + grid[i+1][j];
             maxc = max(cnt, maxc);
