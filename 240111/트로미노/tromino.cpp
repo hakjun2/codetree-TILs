@@ -13,8 +13,8 @@ int main() {
         }
     }
     int cnt = 0; int maxc = 0;
-    for(int i = 0 ; i < n ; i++) {
-        for(int j = 0 ; j < m ; j++) {
+    for(int i = 0 ; i <= n ; i++) {
+        for(int j = 0 ; j <= m ; j++) {
             cnt = grid[i][j] + grid[i+1][j] + grid[i+1][j+1];
             maxc = max(cnt, maxc);
             cnt = grid[i][j+1] + grid[i+1][j+1];
